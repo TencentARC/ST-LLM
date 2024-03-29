@@ -1,0 +1,193 @@
+from torchvision import transforms
+from torchvision.transforms import InterpolationMode
+
+mean = (0.48145466, 0.4578275, 0.40821073)
+std = (0.26862954, 0.26130258, 0.27577711)
+normalize = transforms.Normalize(mean, std)
+type_transform = transforms.Lambda(lambda x: x.float().div(255.0))
+train_transform = transforms.Compose(
+    [
+        transforms.RandomResizedCrop(
+            224,
+            scale=(0.5, 1.0),
+            interpolation=InterpolationMode.BICUBIC,
+        ),
+        #transforms.RandomHorizontalFlip(),
+        type_transform,
+        normalize,
+    ]
+)
+
+anno_root_it = '/Path/to/MVBench/VideoChat2-IT'
+
+# ============== pretraining datasets=================
+available_corpus = dict(
+    # image
+    llava_full=[
+        f"{anno_root_it}/image/llava/llava_full.json", 
+        "your_data_path/coco_caption",
+    ],
+    caption_coco=[
+        f"{anno_root_it}/image/caption/coco/train.json", 
+        "your_data_path/coco_caption",
+    ],
+    caption_llava=[
+        f"{anno_root_it}/image/caption/llava/train.json", 
+        "your_data_path/coco_caption",
+    ],
+    caption_minigpt4=[
+        f"{anno_root_it}/image/caption/minigpt4/train.json", 
+        "your_data_path/minigpt4/image",
+    ],
+    caption_paragraph_captioning=[
+        f"{anno_root_it}/image/caption/paragraph_captioning/train.json", 
+        "your_data_path/m3it/image-paragraph-captioning",
+    ],
+    caption_textcaps=[
+        f"{anno_root_it}/image/caption/textcaps/train.json", 
+        "your_data_path/m3it/textcap",
+    ],
+    classification_imagenet=[
+        f"{anno_root_it}/image/classification/imagenet/train.json", 
+        "your_data_path/m3it/imagenet",
+    ],
+    classification_coco_itm=[
+        f"{anno_root_it}/image/classification/coco_itm/train.json", 
+        "your_data_path/m3it/coco-itm",
+    ],
+    conversation_llava=[
+        f"{anno_root_it}/image/conversation/llava/train.json", 
+        "your_data_path/coco_caption",
+    ],
+    reasoning_clevr=[
+        f"{anno_root_it}/image/reasoning/clevr/train.json", 
+        "your_data_path/m3it/clevr",
+    ],
+    reasoning_visual_mrc=[
+        f"{anno_root_it}/image/reasoning/visual_mrc/train.json", 
+        "your_data_path/m3it/visual-mrc",
+    ],
+    reasoning_llava=[
+        f"{anno_root_it}/image/reasoning/llava/train.json", 
+        "your_data_path/coco_caption",
+    ],
+    vqa_vqav2=[
+        f"{anno_root_it}/image/vqa/vqav2/train.json", 
+        "your_data_path/m3it/vqa-v2",
+    ],
+    vqa_gqa=[
+        f"{anno_root_it}/image/vqa/gqa/train.json", 
+        "your_data_path/m3it/gqa",
+    ],
+    vqa_okvqa=[
+        f"{anno_root_it}/image/vqa/okvqa/train.json", 
+        "your_data_path/m3it/okvqa",
+    ],
+    vqa_a_okvqa=[
+        f"{anno_root_it}/image/vqa/a_okvqa/train.json", 
+        "your_data_path/m3it/a-okvqa",
+    ],
+    vqa_viquae=[
+        f"{anno_root_it}/image/vqa/viquae/train.json", 
+        "your_data_path/m3it/viquae",
+    ],
+    vqa_ocr_vqa=[
+        f"{anno_root_it}/image/vqa/ocr_vqa/train.json", 
+        "your_data_path/m3it/ocr-vqa",
+    ],
+    vqa_text_vqa=[
+        f"{anno_root_it}/image/vqa/text_vqa/train.json", 
+        "your_data_path/m3it/text-vqa",
+    ],
+    vqa_st_vqa=[
+        f"{anno_root_it}/image/vqa/st_vqa/train.json", 
+        "your_data_path/m3it/st-vqa",
+    ],
+    vqa_docvqa=[
+        f"{anno_root_it}/image/vqa/docvqa/train.json", 
+        "your_data_path/m3it/docvqa",
+    ],
+    # video
+    caption_textvr=[
+        f"{anno_root_it}/video/caption/textvr/train.json", 
+        "your_data_path/TextVR/Video",
+        "video"
+    ],
+    caption_videochat=[
+        f"{anno_root_it}/video/caption/videochat/train.json", 
+        "your_data_path/WebVid10M",
+        "video"
+    ],
+    caption_webvid=[
+        f"{anno_root_it}/video/caption/webvid/train.json", 
+        "your_data_path/WebVid2M",
+        "video"
+    ],
+    caption_youcook2=[
+        f"{anno_root_it}/video/caption/youcook2/train.json", 
+        "your_data_path/youcook2/split_videos",
+        "video"
+    ],
+    classification_k710=[
+        f"{anno_root_it}/video/classification/k710/train.json", 
+        "",
+        "video"
+    ],
+    classification_ssv2=[
+        f"{anno_root_it}/video/classification/ssv2/train.json", 
+        "your_data_path/video_pub/ssv2_video",
+        "video"
+    ],
+    conversation_videochat1=[
+        f"{anno_root_it}/video/conversation/videochat1/train_flat.json", 
+        "your_data_path/WebVid10M",
+        "video"
+    ],
+    conversation_videochat2=[
+        f"{anno_root_it}/video/conversation/videochat2/train.json", 
+        "your_data_path/internvid",
+        "video"
+    ],
+    caption_videochatgpt=[
+        f"{anno_root_it}/video/conversation/videochatgpt/train_full_flat.json", 
+        "your_data_path/ANet/ANet_320p_fps30",
+        "video"
+    ],
+    reasoning_next_qa=[
+        f"{anno_root_it}/video/reasoning/next_qa/train.json", 
+        "your_data_path/nextqa",
+        "video"
+    ],
+    reasoning_clevrer_qa=[
+        f"{anno_root_it}/video/reasoning/clevrer_qa/train.json", 
+        "your_data_path/clevrer/video_train",
+        "video"
+    ],
+    reasoning_clevrer_mc=[
+        f"{anno_root_it}/video/reasoning/clevrer_mc/train.json",  
+        "your_data_path/clevrer/video_train",
+        "video"
+    ],
+    vqa_ego_qa=[
+        f"{anno_root_it}/video/vqa/ego_qa/train.json", 
+        "your_data_path/EgoQA/split_videos",
+        "video"
+    ],
+    vqa_tgif_frame_qa=[
+        f"{anno_root_it}/video/vqa/tgif_frame_qa/train.json", 
+        "your_data_path/tgif",
+        "video"
+    ],
+    vqa_tgif_transition_qa=[
+        f"{anno_root_it}/video/vqa/tgif_transition_qa/train.json", 
+        "your_data_path/tgif",
+        "video"
+    ],
+    vqa_webvid_qa=[
+        f"{anno_root_it}/video/vqa/webvid_qa/train.json", 
+        "your_data_path/WebVid2M",
+        "video"
+    ],
+)
+
+

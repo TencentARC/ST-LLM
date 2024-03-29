@@ -1,0 +1,51 @@
+model:
+  arch: st_llm_hf
+  model_type: instructblip_vicuna0
+  use_grad_checkpoint: True
+  max_txt_len: 256
+  end_sym: "###"
+  #prompt_path: "prompts/alignment.txt"
+  prompt_template: '###Human: {} ###Assistant: '
+  llama_model: '/path/to/vicuna-7b-v1.1'
+  ckpt: '/Path/to/instruct_blip_vicuna7b_trimmed.pth'
+  q_former_model: '/Path/to/instruct_blip_vicuna7b_trimmed.pth'
+  qformer_text_input: True
+  freeze_LLM: False
+  video_input: "residual"
+  residual_size: 16
+  use_mask : True
+  mvm_decode: True
+
+datasets:
+  caption_videochat:
+    num_frames: 64
+  conversation_videochat1:
+    num_frames: 64
+  caption_videochatgpt:
+    num_frames: 64
+    #video_reader_type: 'rawframe'
+  caption_webvid:
+    num_frames: 64
+  vqa_webvid_qa:
+    num_frames: 64
+
+run:
+  task: video_text_it
+  bf16: True
+  tf32: False
+  output_dir: "./stllm/output/instructblipbase_stllm_conversation"
+  num_train_epochs: 2
+  dataloader_num_workers: 4
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 16
+  gradient_accumulation_steps: 1
+  evaluation_strategy: "no"
+  learning_rate: 2e-5
+  weight_decay: 0.
+  warmup_ratio: 0.03
+  lr_scheduler_type: 'cosine'
+  logging_steps: 50
+  model_max_length: 1024
+  save_strategy: "epoch" 
+  save_total_limit: 1
+  deepspeed: 'stllm/train/zero2.json'
