@@ -2,12 +2,12 @@
 <a target="_blank"><img src="example/material/stllm_logo.png" alt="ST-LLM" style="width: 50%; min-width: 150px; display: block; margin: auto;"></a>
 </p>
 
-<h2 align="center"> <a href="https://arxiv.org/abs/2309.15785">ST-LLM: Large Language Models Are Effective Temporal Learners</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2404.00308">ST-LLM: Large Language Models Are Effective Temporal Learners</a></h2>
 
 <h5 align=center>
 
 [![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/farewellthree/ST_LLM_weight/tree/main)
-[![arXiv](https://img.shields.io/badge/Arxiv-2311.08046-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2309.15785)
+[![arXiv](https://img.shields.io/badge/Arxiv-2311.08046-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2404.00308)
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/farewellthree/ST-LLM/blob/main/LICENSE)
 </h5>
 
@@ -119,6 +119,14 @@ If you find the code and paper useful for your research, please consider staring
   title={One for all: Video conversation is feasible without video instruction tuning},
   author={Liu, Ruyang and Li, Chen and Ge, Yixiao and Shan, Ying and Li, Thomas H and Li, Ge},
   journal={arXiv preprint arXiv:2309.15785},
+  year={2023}
+}
+```
+```
+@article{liu2023one,
+  title={ST-LLM: Large Language Models Are Effective Temporal Learners},
+  author={Liu, Ruyang and Li, Chen and Tang, Haoran and Ge, Yixiao and Shan, Ying and Li, Ge},
+  journal={https://arxiv.org/abs/2404.00308},
   year={2023}
 }
 ```
