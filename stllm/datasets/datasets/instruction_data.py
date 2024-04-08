@@ -148,8 +148,8 @@ available_corpus = dict(
         "your_data_path/internvid",
         "video"
     ],
-    caption_videochatgpt=[
-        f"{anno_root_it}/video/conversation/videochatgpt/train_full_flat.json", 
+    conversation_videochatgpt=[
+        f"{anno_root_it}/video/conversation/videochatgpt/train.json", 
         "your_data_path/ANet/ANet_320p_fps30",
         "video"
     ],
