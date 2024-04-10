@@ -17,7 +17,7 @@ wget https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/In
 wget https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xxl.pth
 wget https://huggingface.co/Vision-CAIR/MiniGPT-4/blob/main/pretrained_minigpt4.pth
 ```
-the path of Q-Former and Linear Weight can be modified in ```q_former_model``` and ```ckpk``` in each config [here](config).
+the path of Q-Former and Linear Weight can be modified in ```q_former_model``` and ```ckpt``` in each config [here](config).
 
 #### Prepare Vicuna Weights
 Please first follow the [instructions](https://github.com/lm-sys/FastChat) to prepare Vicuna v1.1 (for InstructBLIP) or Vicuna v1.0 (for MiniGPT4). 
