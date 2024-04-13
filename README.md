@@ -11,6 +11,17 @@
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/farewellthree/ST-LLM/blob/main/LICENSE)
 </h5>
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-question-answering-on-mvbench)](https://paperswithcode.com/sota/video-question-answering-on-mvbench?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-based-generative-performance)](https://paperswithcode.com/sota/video-based-generative-performance?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-based-generative-performance-1)](https://paperswithcode.com/sota/video-based-generative-performance-1?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-based-generative-performance-5)](https://paperswithcode.com/sota/video-based-generative-performance-5?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-based-generative-performance-3)](https://paperswithcode.com/sota/video-based-generative-performance-3?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-based-generative-performance-2)](https://paperswithcode.com/sota/video-based-generative-performance-2?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/video-based-generative-performance-4)](https://paperswithcode.com/sota/video-based-generative-performance-4?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/zeroshot-video-question-answer-on-activitynet)](https://paperswithcode.com/sota/zeroshot-video-question-answer-on-activitynet?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/zeroshot-video-question-answer-on-msrvtt-qa)](https://paperswithcode.com/sota/zeroshot-video-question-answer-on-msrvtt-qa?p=st-llm-large-language-models-are-effective)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective/zeroshot-video-question-answer-on-msvd-qa)](https://paperswithcode.com/sota/zeroshot-video-question-answer-on-msvd-qa?p=st-llm-large-language-models-are-effective)
+
 ## News :loudspeaker:
 
 * **[2024/3/28]**  All codes and weights are available now! Welcome to watch this repository for the latest updates.
