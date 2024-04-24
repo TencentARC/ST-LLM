@@ -12,7 +12,7 @@
 </h5>
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective-1/video-question-answering-on-mvbench)](https://paperswithcode.com/sota/video-question-answering-on-mvbench?p=st-llm-large-language-models-are-effective-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective-1/video-based-generative-performance-4)](https://paperswithcode.com/sota/video-based-generative-performance-4?p=st-llm-large-language-models-are-effective-1)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective-1/video-based-generative-performance)](https://paperswithcode.com/sota/video-based-generative-performance?p=st-llm-large-language-models-are-effective-1)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective-1/video-based-generative-performance-1)](https://paperswithcode.com/sota/video-based-generative-performance-1?p=st-llm-large-language-models-are-effective-1)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective-1/video-based-generative-performance-5)](https://paperswithcode.com/sota/video-based-generative-performance-5?p=st-llm-large-language-models-are-effective-1)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/st-llm-large-language-models-are-effective-1/video-based-generative-performance-2)](https://paperswithcode.com/sota/video-based-generative-performance-2?p=st-llm-large-language-models-are-effective-1)
