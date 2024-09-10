@@ -43,7 +43,22 @@
         <th>Avg</th><th>Correct</th><th>Detail</th><th>Context</th><th>Temporal</th><th>Consist</th><th>MSVD</th><th>MSRVTT</th><th>ANet</th>
     </tr>
   <tr align="center">
+        <td>VideoLLaMA</td><td>34.1</td><td>1.96</td><td>2.18</td><td>2.16</td><td>1.82</td><td>1.79</td><td>1.98</td><td>51.6</td><td>29.6</td><td>12.4</td>
+    </tr>
+  <tr align="center">
+        <td>LLaMA-Adapter</td><td>31.7</td><td>2.03</td><td>2.32</td><td>2.30</td><td>1.98</td><td>2.15</td><td>2.16</td><td>54.9</td><td>43.8</td><td>34.2</td>
+    </tr>
+  <tr align="center">
+        <td>VideoChat</td><td>35.5</td><td>2.23</td><td>2.50</td><td>2.53</td><td>1.94</td><td>2.24</td><td>2.29</td><td>56.3</td><td>45.0</td><td>26.5</td>
+    </tr>
+  <tr align="center">
         <td>VideoChatGPT</td><td>32.7</td><td>2.38</td><td>2.40</td><td>2.52</td><td>2.62</td><td>1.98</td><td>2.37</td><td>64.9</td><td>49.3</td><td>35.7</td>
+    </tr>
+  <tr align="center">
+        <td>MovieChat</td><td>-</td><td>2.76</td><td>2.93</td><td>3.01</td><td>2.24</td><td>2.42</td><td>2.67</td><td>74.2</td><td>52.7</td><td>45.7</td>
+    </tr>
+  <tr align="center">
+        <td>Vista-LLaMA</td><td>-</td><td>2.44</td><td>2.64</td><td>3.18</td><td>2.26</td><td>2.31</td><td>2.57</td><td>65.3</td><td>60.5</td><td>48.3</td>
     </tr>
   <tr align="center">
         <td>LLaMA-VID</td><td>-</td><td>2.89</td><td>2.96</td><td>3.00</td><td>3.53</td><td>2.46</td><td>2.51</td><td>69.7</td><td>57.7</td><td>47.4</td>
